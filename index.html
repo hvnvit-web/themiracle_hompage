@@ -401,6 +401,41 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
+        .contact-label {
+            margin: 5px 0;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.9em;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 16px;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+
+        /* 모바일에서 더 작은 카드 */
+        @media (max-width: 768px) {
+            .contact-card {
+                padding: 12px 15px;
+                min-width: 100px;
+                flex: 0 1 100px;
+            }
+
+            .contact-label {
+                display: none;
+            }
+
+            .contact-button {
+                margin-top: 5px;
+                padding: 5px 12px;
+                font-size: 0.75em;
+            }
+        }
+
         /* 링크 버튼 */
         .link-buttons {
             display: flex;
@@ -825,8 +860,8 @@
                 <div class="contact-card">
                     <a href="tel:010-8405-2567" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
                         <img src="images/phone-icon.png" alt="전화" style="width: 45px; height: 45px; margin-bottom: 8px;">
-                        <p style="margin: 5px 0; color: #333; font-weight: 600; font-size: 0.9em;">전화 상담</p>
-                        <span style="display: inline-block; margin-top: 8px; padding: 6px 16px; background: #E74C3C; color: white; border-radius: 20px; font-size: 0.85em;">
+                        <p class="contact-label">전화 상담</p>
+                        <span class="contact-button" style="background: #E74C3C;">
                             상담하기
                         </span>
                     </a>
@@ -836,8 +871,8 @@
                 <div class="contact-card">
                     <a href="https://open.kakao.com/me/kk0813" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
                         <img src="images/kakao-icon.png" alt="카카오톡" style="width: 45px; height: 45px; margin-bottom: 8px;">
-                        <p style="margin: 5px 0; color: #333; font-weight: 600; font-size: 0.9em;">카카오톡</p>
-                        <span style="display: inline-block; margin-top: 8px; padding: 6px 16px; background: #FEE500; color: #3C1E1E; border-radius: 20px; font-size: 0.85em;">
+                        <p class="contact-label">카카오톡</p>
+                        <span class="contact-button" style="background: #FEE500; color: #3C1E1E;">
                             상담하기
                         </span>
                     </a>
@@ -847,8 +882,8 @@
                 <div class="contact-card">
                     <a href="https://www.instagram.com/kkk0_813" target="_blank" style="display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
                         <img src="images/instagram-icon.png" alt="Instagram" style="width: 45px; height: 45px; margin-bottom: 8px; transition: transform 0.3s ease;">
-                        <p style="margin: 5px 0; color: #333; font-weight: 600; font-size: 0.9em;">@kkk0_813</p>
-                        <span style="display: inline-block; margin-top: 8px; padding: 6px 16px; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; border-radius: 20px; font-size: 0.85em;">
+                        <p class="contact-label">@kkk0_813</p>
+                        <span class="contact-button" style="background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);">
                             팔로우하기
                         </span>
                     </a>
